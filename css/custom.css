@@ -1,0 +1,29 @@
+.fixed-plugin {
+    background: rgba(47,57,84,.6);
+    position: fixed;
+    top: 115px;
+    right: 0;
+    width: 64px;
+    background: rgb(255 152 0 / 55%);
+    z-index: 1031;
+    border-radius: 8px 0 0 8px;
+    text-align: center;
+}
+
+.oic {
+    color: rgb(255, 255, 255);
+}
+.oic:hover {
+    color: #ff961ec4;
+}
+
+.fixed-plugin .fa-users {
+    
+    padding: 10px;
+    border-radius: 0 0 6px 6px;
+    width: auto;
+}
+
+.pcolor {
+    color: black;
+}

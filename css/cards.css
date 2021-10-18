@@ -1,0 +1,120 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body1 {
+  font-family: 'Segoe Ui', sans-serif;
+  font-size: 62.5%;
+  min-height: 45vh;
+  padding: 2rem;
+  color: #666;
+  background: transparent;
+  text-align: center;
+}
+
+.main1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.wrap1 {
+  margin: 2rem;
+  transform-style: preserve-3d;
+  transform: perspective(100rem);
+  cursor: pointer;
+}
+.container1 {
+  --rX: 0;
+  --rY: 0;
+  --bX: 50%;
+  --bY: 80%;
+  width: 12rem;
+  height: 18rem;
+  border: 1px solid #e7e8f1;
+  border-radius: 1.6rem;
+  padding: 4rem;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  transform: rotate(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+  /*background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1)), url("https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=");
+  background-position: var(--bX) var(--bY);
+  background-size: 40rem auto; 
+  box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
+  transition: transform .6s 1s;*/
+}
+
+.bg1 {
+  background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1)), url("../img/parama.png");
+  background-position: center;
+  background-size: 20rem auto;
+  box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
+  transition: transform .6s 1s;
+}
+.bg2 {
+  background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1)), url("../img/paramb.png");
+  background-position: center;
+  background-size: 20rem auto;
+  box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
+  transition: transform .6s 1s;
+}
+.bg3 {
+  background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1)), url("../img/paramc.png");
+  background-position: center;
+  background-size: 21rem auto;
+  box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
+  transition: transform .6s 1s;
+}
+
+.bg4 {
+  background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1)), url("../img/paramd.png");
+  background-position: center;
+  background-size: 22rem auto;
+  box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
+  transition: transform .6s 1s;
+}
+
+.container1:before,
+.container1:after {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #fff;
+  position: absolute;
+  z-index: 2;
+  opacity: .3;
+  transition: .3s;
+}
+.container1:before {
+  top: 2rem;
+  right: 2rem;
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+.container1:after {
+  bottom: 2rem;
+  left: 2rem;
+  border-top-width: 0;
+  border-right-width: 0;
+}
+.container--active {
+  transition: none;
+}
+
+
+.container1 p{
+  color: #e7e8f1;
+  font-size: 2.2rem;
+}
+.wrap1:hover .container1:before,
+.wrap1:hover .container1:after {
+  width: calc(100% - 4rem);
+  height: calc(100% - 4rem);
+}
+
+/***********************************************************/
